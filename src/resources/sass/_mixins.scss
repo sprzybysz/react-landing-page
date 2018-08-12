@@ -1,0 +1,45 @@
+@mixin theme($color_one, $color_two, $color_three) {
+  $primary: $color_one;
+  $secondary: $color_two;
+  $tertiary: $color_three;
+    .color_primary {
+      color: $primary;
+    }
+    .bg_primary {
+      background-color: $primary;
+    }
+    .color_secondary {
+      color: $secondary;
+    }
+    .bg_secondary {
+      background-color: $secondary;
+    }
+    .color_tertiary {
+      color: $tertiary;
+    }
+    .bg_tertiary {
+      background-color: $tertiary;
+    }
+      .overlay {
+        background: -webkit-linear-gradient(180deg, $tertiary, $primary);
+        background: linear-gradient(180deg, $tertiary, $primary);
+      }
+    .my_calendar li:hover {
+      color:  $secondary;
+    }
+    .my_calendar {
+      color: $secondary;
+      ul {
+        background-color: $secondary;
+        }
+      }
+      .my_calendar li:hover a {
+        color: $secondary;
+      }
+      .pricing_wrapper .pricing_inner_wrapper {
+          border:2px solid $secondary;
+      }
+      .pricing_inner_wrapper .pricing_title {
+          border-bottom: 1px solid $secondary;
+      }
+  }
